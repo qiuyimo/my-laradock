@@ -1,92 +1,172 @@
-<p align="center">
-    <img src="https://s19.postimg.org/jblfytw9f/laradock-logo.jpg" alt="Laradock Logo"/>
-</p>
+# laradock
 
-<p align="center">A Docker PHP development environment that facilitates running PHP Apps on Docker</p>
+[github 官方](https://github.com/laradock/laradock)
 
-<p align="center">
-   <a href="https://travis-ci.org/laradock/laradock"><img src="https://travis-ci.org/laradock/laradock.svg?branch=master" alt="Build status"></a>
-   <a href="https://github.com/laradock/laradock/stargazers"><a href="#backers" alt="sponsors on Open Collective"><img src="https://opencollective.com/laradock/backers/badge.svg" /></a> <a href="#sponsors" alt="Sponsors on Open Collective"><img src="https://opencollective.com/laradock/sponsors/badge.svg" /></a> <img src="https://img.shields.io/github/stars/laradock/laradock.svg" alt="GitHub stars"></a>
-   <a href="https://github.com/laradock/laradock/network"><img src="https://img.shields.io/github/forks/laradock/laradock.svg" alt="GitHub forks"></a>
-   <a href="https://github.com/laradock/laradock/issues"><img src="https://img.shields.io/github/issues/laradock/laradock.svg" alt="GitHub issues"></a>
-   <a href="https://raw.githubusercontent.com/laradock/laradock/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a>
-    <a href="http://laradock.io/contributing"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="contributions welcome"></a>
-</p>
-
-<h4 align="center" style="color:#7d58c2">Use Docker First And Learn About It Later</h4>
-
-<p align="center">
-    <a href="https://zalt.me"><img src="http://forthebadge.com/images/badges/built-by-developers.svg" alt="forthebadge" width="240" ></a>
-</p>
+在这个基础上, 修改了 `.env` 的一些配合. 适合我的开发环境. 
 
 
----
+## 目录结构
 
-<p align="center">
-	<a href="http://laradock.io">
-	   <img src="https://s19.postimg.org/ecnn9vdw3/Screen_Shot_2017-08-01_at_5.08.54_AM.png" width=300px" alt="Laradock Docs"/>
-	</a>
-</p>
+```shell
+➜  code pwd
+/Users/qiuyu/code
+➜  code ll
+total 192
+drwxr-xr-x@ 60 qiuyu  staff   1.9K Aug 31 14:14 laradock
+drwxr-xr-x   9 qiuyu  staff   288B Aug 10 10:00 public
+drwxr-xr-x  35 qiuyu  staff   1.1K Aug 29 16:56 shop
+➜  code
+```
 
-
-## Sponsors
-
-Support this project by becoming a sponsor. 
-
-Your logo will show up on the [github repository](https://github.com/laradock/laradock/) index page and the [documentation](http://laradock.io/) main page, with a link to your website. [[Become a sponsor](https://opencollective.com/laradock#sponsor)]
-
-<a href="https://opencollective.com/laradock/sponsor/0/website" target="_blank"><img src="https://opencollective.com/laradock/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/laradock/sponsor/1/website" target="_blank"><img src="https://opencollective.com/laradock/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/laradock/sponsor/2/website" target="_blank"><img src="https://opencollective.com/laradock/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/laradock/sponsor/3/website" target="_blank"><img src="https://opencollective.com/laradock/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/laradock/sponsor/4/website" target="_blank"><img src="https://opencollective.com/laradock/sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/laradock/sponsor/5/website" target="_blank"><img src="https://opencollective.com/laradock/sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/laradock/sponsor/6/website" target="_blank"><img src="https://opencollective.com/laradock/sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/laradock/sponsor/7/website" target="_blank"><img src="https://opencollective.com/laradock/sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/laradock/sponsor/8/website" target="_blank"><img src="https://opencollective.com/laradock/sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/laradock/sponsor/9/website" target="_blank"><img src="https://opencollective.com/laradock/sponsor/9/avatar.svg"></a>
+`/User/qiuyu/code` 目录下, 存放的都是项目. 其中. `laradock` 要与项目方在同级目录下.
 
 
-## Contributors
 
-#### Core contributors:
-- [Mahmoud Zalt](https://github.com/Mahmoudz) @mahmoudz | [Twitter](https://twitter.com/Mahmoud_Zalt) | [Site](http://zalt.me)
-- [Bo-Yi Wu](https://github.com/appleboy) @appleboy | [Twitter](https://twitter.com/appleboy)
-- [Philippe Trépanier](https://github.com/philtrep) @philtrep
-- [Mike Erickson](https://github.com/mikeerickson) @mikeerickson
-- [Dwi Fahni Denni](https://github.com/zeroc0d3) @zeroc0d3
-- [Thor Erik](https://github.com/thorerik) @thorerik
-- [Winfried van Loon](https://github.com/winfried-van-loon) @winfried-van-loon
-- [TJ Miller](https://github.com/sixlive) @sixlive
-- [Yu-Lung Shao (Allen)](https://github.com/bestlong) @bestlong
-- [Milan Urukalo](https://github.com/urukalo) @urukalo
-- [Vince Chu](https://github.com/vwchu) @vwchu
-- [Huadong Zuo](https://github.com/zuohuadong) @zuohuadong
-- Join us, by submitting 20 useful PR's.
+## 自定义配置
 
-#### Awesome contributors:
+### 修改 localhost 的路径和配置
 
-<a href="https://github.com/laradock/laradock/graphs/contributors"><img src="https://opencollective.com/laradock/contributors.svg?width=890" /></a>
+`/Users/qiuyu/code/laradock/nginx/sites/default.conf`
+
+![image-20180831142828549](assets/image-20180831142828549.png)
+
+ 目的: 
+
+在浏览器中打开 `localhost`, 则会显示目录. 新创建的项目, 不用配置虚拟主机就可以访问. 
+
+![image-20180831143059678](assets/image-20180831143059678.png)
 
 
-## Donations
 
-> Help keeping the project development going, by [contributing](http://laradock.io/contributing) or donating a little. 
-> Thanks in advance.
+### php-fpm 的 Dockerfile 文件修改
 
-Donate directly via [Paypal](https://www.paypal.me/mzalt)
+![image-20180831143155157](assets/image-20180831143155157.png)
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/mzalt) 
+新加了 2 个 php 的扩展. 想要添加其他扩展, 可以作为参考.
 
-or become a backer on [Open Collective](https://opencollective.com/laradock#backer)
+新增了扩展, 需要先停止 docker
 
-<a href="https://opencollective.com/laradock#backers" target="_blank"><img src="https://opencollective.com/laradock/backers.svg?width=890"></a>
+`docker-compose down`
 
-or show your support via [Beerpay](https://beerpay.io/laradock/laradock) 
+然后重新编译
 
-[![Beerpay](https://beerpay.io/laradock/laradock/badge.svg?style=flat)](https://beerpay.io/laradock/laradock)
+`docker-compose build php-fpm workspace`
+
+再启动
+
+`docker-compose up -d nginx mysql php-fpm phpmyadmin redis`
+
+### phpstorm 使用 xdebug
+
+#### 开启 xdebug
+
+修改 `/Users/qiuyu/code/laradock/.env`
+
+`WORKSPACE_INSTALL_XDEBUG=false` 改为 `WORKSPACE_INSTALL_XDEBUG=true`
+
+`PHP_FPM_INSTALL_XDEBUG=false` 改为 `PHP_FPM_INSTALL_XDEBUG=true`
+
+#### 修改 xdebug.ini
+
+`/Users/qiuyu/code/laradock/php-fpm/xdebug.ini`
+
+`/Users/qiuyu/code/laradock/workspace/xdebug.ini`
+
+这 2 个文件, 要保持一致. 我的修改如下. 
+
+```shell
+; NOTE: The actual debug.so extention is NOT SET HERE but rather (/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini)
+
+; xdebug.remote_host=dockerhost
+xdebug.remote_host=docker.for.mac.localhost
+; xdebug.remote_connect_back=1
+xdebug.remote_connect_back=0
+xdebug.remote_port=9001
+xdebug.idekey=PHPSTORM
+
+xdebug.remote_autostart=0
+xdebug.remote_enable=0
+xdebug.cli_color=0
+xdebug.profiler_enable=0
+xdebug.profiler_output_dir="~/xdebug/phpstorm/tmp/profiling"
+
+xdebug.remote_handler=dbgp
+xdebug.remote_mode=req
+
+xdebug.var_display_max_children=-1
+xdebug.var_display_max_data=-1
+xdebug.var_display_max_depth=-1
+
+```
+
+其中. 有 2 个注释掉的语句. 
+
+`; xdebug.remote_connect_back` 这个默认就是注释的. 
+
+需要开启, 这里我用的是 mac, 查资料, 加上了这句. xdebug.remote_host=docker.for.mac.localhost
+
+由原来默认的 `xdebug.remote_connect_back=1` 改为 `xdebug.remote_connect_back=0`
+
+由原来默认的 `xdebug.remote_port=9000`  改为 `xdebug.remote_port=9001`.
+
+一定要注意. `workspace` 和 `php-fpm` 下的 `xdebug.ini` 都要修改. 
+
+#### 重新编译 php-fpm workspace
+
+先停止docker
+
+`docker-compose down`
+
+重新编译
+
+`docker-compose build php-fpm workspace`
+
+启动 laradock
+
+`docker-compose up -d nginx mysql php-fpm redis phpmyadmin`
+
+查看 `phpinfo()`
+
+![image-20180831144856086](assets/image-20180831144856086.png)
+
+显示的配置与 `xdebug.ini` 中的一致. 证明配置成功. 
 
 
-## License
 
-[MIT License](https://github.com/laradock/laradock/blob/master/LICENSE)
+#### phpstorm 中的配置
+
+
+
+打开 phpstorm 的设置. 
+
+![image-20180831145023783](assets/image-20180831145023783.png)
+
+这里的 `Debug port`, 改为 9001, 因为我们在 `xdebug.ini` 中设置的就是 9001, 要保持一致. 
+
+
+![image-20180831145347754](assets/image-20180831145347754.png)
+
+1. 这里的 `name`, 要与 `.env` 中的 `PHP_IDE_CONFIG=serverName=laradock` 保持一致. 所以, 这里要填 `laradock`.
+
+2. 填自己定义的虚拟主机. 就是在 nginx 中配置的虚拟域名.
+
+3. 目录映射的地址. 项目在物理主机中和 docker 中的路径映射.
+
+#### phpstorm 中调试
+
+打断点
+
+![image-20180831150054338](assets/image-20180831150054338.png)
+
+开启 xdebug
+
+
+![image-20180831150159402](assets/image-20180831150159402.png)
+
+
+
+在浏览器中输入配置的虚拟主机地址. `laravel-passport.com`
+
+phpstorm 的 xdebug 就开始工作了. 
+
+![image-20180831150318105](assets/image-20180831150318105.png)
